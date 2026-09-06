@@ -44,3 +44,53 @@ p {
   line-height: 1.6;
   color: #333333;
 }
+/* 1. Nhận xét (comment out) kiểu dáng cũ của thẻ li */
+/* 
+li {
+  display: inline-block;
+  width: 120px;
+} 
+*/
+
+/* 2. Tạo kiểu cho nav: khối nội tuyến (inline-block) và rộng khoảng 80% */
+nav {
+  display: inline-block;
+  width: 80%;
+  background-color: #f0f2f5;
+}
+
+/* 3. Bộ chọn hậu duệ: chỉ áp dụng cho ảnh bên trong thẻ nav, rộng khoảng 10% */
+nav img {
+  width: 10%;
+}
+
+/* 4. Tạo kiểu cho lớp .grid: lưới 2 cột (mỗi cột khoảng 40%) */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-around; /* Căn đều khoảng trống */
+  align-items: center;           /* Căn trục dọc */
+  row-gap: 20px;                 /* Khoảng cách giữa các hàng */
+}
+
+/* 5. Bộ chọn hậu duệ: chỉ ảnh nằm trong .grid mới rộng 100% (không ảnh hưởng đến .flex) */
+.grid img {
+  width: 100%;
+}
+
+/* 6. Tạo kiểu cho lớp .flex */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Tránh lỗi tương phản và tạo kiểu cho link nhảy nội dung */
+a {
+  color: #003366;
+}
+
+.skip-link {
+  display: inline-block;
+  margin-bottom: 10px;
+}
